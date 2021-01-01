@@ -48,7 +48,7 @@ console.log('a user conneted');
 });
 
 setInterval(function() {
-    io.emit("COMMON_TOPIC" , 'some common data :${new Date().getsecond()}')
+    io.emit("COMMON_TOPIC", `some common data :${new Date().getSeconds()}`)
 }, 3000)
 
 server.listen(PORT,()=>{
